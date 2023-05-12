@@ -212,6 +212,23 @@
 /area/ruin/space/has_grav/interdyne
 	name = "\improper Interdyne Research Base"
 
+//Ruin of Crashed Ship
+
+/area/ruin/space/has_grav/crashedship/aft
+	name = "\improper Crashed Ship's Aft"
+
+/area/ruin/space/has_grav/crashedship/midship
+	name = "\improper Crashed Ship's Midship"
+
+/area/ruin/space/has_grav/crashedship/fore
+	name = "\improper Crashed Ship's Fore"
+
+/area/ruin/space/has_grav/crashedship/big_asteroid
+	name = "\improper Asteroid"
+
+/area/ruin/space/has_grav/crashedship/small_asteroid
+	name = "\improper Asteroid"
+
 //Ruin of ancient Space Station (OldStation)
 
 /area/ruin/space/ancientstation
@@ -538,6 +555,11 @@
 	ambientsounds = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambitech.ogg',\
 											'sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg', 'sound/ambience/ambimystery.ogg')
 	airlock_wires = /datum/wires/airlock/engineering
+
+// CRASHED PRISON SHUTTLE
+/area/ruin/space/prison_shuttle
+	name = "\improper Crashed Prisoner Shuttle"
+
 
 //ABANDONED BOX WHITESHIP
 

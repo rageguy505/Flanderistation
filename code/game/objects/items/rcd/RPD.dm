@@ -207,7 +207,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 		icon_state = "[icon_state]_preview"
 
 /obj/item/pipe_dispenser
-	name = "Rapid Pipe Dispenser"
+	name = "rapid pipe dispenser"
 	desc = "A device used to rapidly pipe things."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "rpd"
@@ -221,7 +221,7 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	throw_range = 5
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
-	custom_materials = list(/datum/material/iron=75000, /datum/material/glass=37500)
+	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT*37.5, /datum/material/glass=SHEET_MATERIAL_AMOUNT*18.75)
 	armor_type = /datum/armor/item_pipe_dispenser
 	resistance_flags = FIRE_PROOF
 	///Sparks system used when changing device in the UI
@@ -235,15 +235,15 @@ GLOBAL_LIST_INIT(transit_tube_recipes, list(
 	///Color of the device we are going to spawn
 	var/paint_color = "green"
 	///Speed of building atmos devices
-	var/atmos_build_speed = 0.5 SECONDS
+	var/atmos_build_speed = 0.4 SECONDS
 	///Speed of building disposal devices
 	var/disposal_build_speed = 0.5 SECONDS
 	///Speed of building transit devices
 	var/transit_build_speed = 0.5 SECONDS
 	///Speed of removal of unwrenched devices
-	var/destroy_speed = 0.5 SECONDS
+	var/destroy_speed = 0.2 SECONDS
 	///Speed of reprogramming connectable directions of smart pipes
-	var/reprogram_speed = 0.5 SECONDS
+	var/reprogram_speed = 0.2 SECONDS
 	///Category currently active (Atmos, disposal, transit)
 	var/category = ATMOS_CATEGORY
 	///Piping layer we are going to spawn the atmos device in
