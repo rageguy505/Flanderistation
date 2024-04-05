@@ -484,7 +484,7 @@
 	name = "Shackling Aura"
 	desc = "Will start handcuffing a victim on contact, and mute them if successful."
 	invocation = "In'totum Lig'abis!"
-	color = "#000000" // black
+	color = COLOR_BLACK // black
 
 /obj/item/melee/blood_magic/shackles/afterattack(atom/target, mob/living/carbon/user, proximity)
 	if(IS_CULTIST(user) && iscarbon(target) && proximity)
@@ -501,7 +501,7 @@
 		playsound(loc, 'sound/weapons/cablecuff.ogg', 30, TRUE, -2)
 		C.visible_message(span_danger("[user] begins restraining [C] with dark magic!"), \
 								span_userdanger("[user] begins shaping dark magic shackles around your wrists!"))
-		if(do_after(user, 30, C))
+		if(do_after(user, 3 SECONDS, C))
 			if(!C.handcuffed)
 				C.set_handcuffed(new /obj/item/restraints/handcuffs/energy/cult/used(C))
 				C.update_handcuffed()
@@ -534,7 +534,7 @@
 	name = "Twisting Aura"
 	desc = "Corrupts certain metalic objects on contact."
 	invocation = "Ethra p'ni dedol!"
-	color = "#000000" // black
+	color = COLOR_BLACK // black
 	var/channeling = FALSE
 
 /obj/item/melee/blood_magic/construction/examine(mob/user)
@@ -580,7 +580,7 @@
 				playsound(T, 'sound/machines/airlock_alien_prying.ogg', 80, TRUE)
 				var/prev_color = candidate.color
 				candidate.color = "black"
-				if(do_after(user, 90, target = candidate))
+				if(do_after(user, 9 SECONDS, target = candidate))
 					candidate.undeploy()
 					candidate.emp_act(EMP_HEAVY)
 					var/construct_class = show_radial_menu(user, src, GLOB.construct_radial_images, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
@@ -609,7 +609,7 @@
 			channeling = TRUE
 			playsound(T, 'sound/machines/airlockforced.ogg', 50, TRUE)
 			do_sparks(5, TRUE, target)
-			if(do_after(user, 50, target = user))
+			if(do_after(user, 5 SECONDS, target = user))
 				if(QDELETED(target))
 					channeling = FALSE
 					return
