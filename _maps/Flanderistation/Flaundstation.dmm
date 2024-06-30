@@ -13226,10 +13226,6 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/turret_protected/aisat/teleporter)
-"dYE" = (
-/obj/machinery/mech_bay_recharge_port,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "dYL" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -22011,10 +22007,6 @@
 /obj/effect/mapping_helpers/airlock/access/any/engineering/general,
 /turf/open/floor/plating/reinforced,
 /area/station/engineering/main)
-"gvY" = (
-/obj/machinery/computer/mech_bay_power_console,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "gwI" = (
 /turf/open/floor/iron/dark,
 /area/station/command/heads_quarters/captain)
@@ -22133,6 +22125,11 @@
 "gzl" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/structure/disposalpipe/sorting/mail/flip{
+	dir = 4;
+	name = "Atmospherics Junction";
+	sortType = 16
+	},
 /turf/open/floor/iron/dark,
 /area/station/service/library/lounge)
 "gzm" = (
@@ -24083,10 +24080,6 @@
 /obj/effect/turf_decal/siding/dark_green,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
-"hdo" = (
-/obj/vehicle/sealed/mecha/ripley/cargo,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "hds" = (
 /turf/closed/wall/rust,
 /area/station/maintenance/port)
@@ -41649,6 +41642,7 @@
 "moh" = (
 /obj/structure/table/optable,
 /obj/effect/turf_decal/bot_white,
+/obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/dark,
 /area/station/medical/morgue)
 "mou" = (
@@ -63461,7 +63455,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 9
 	},
-/area/station/service/bar)
+/area/station/service/bar/backroom)
 "sGE" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
@@ -109395,7 +109389,7 @@ sAh
 xPG
 fgd
 roS
-dYE
+xUL
 lOW
 yej
 uqQ
@@ -109652,7 +109646,7 @@ piR
 xPG
 fYe
 keB
-gvY
+xUL
 lOW
 yej
 smx
@@ -109909,7 +109903,7 @@ sAh
 xPG
 aLl
 fiO
-hdo
+xUL
 lOW
 yej
 uqQ
