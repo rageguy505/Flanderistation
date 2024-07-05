@@ -67,12 +67,14 @@
 	shuttle_id = "science"
 	},
 /obj/structure/fans/tiny,
+/obj/structure/cable,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/abandoned/bridge{
 	name = "Security Pod"
 	})
 "s" = (
 /obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/abandoned/bridge{
 	name = "Security Pod"
@@ -147,6 +149,12 @@
 /area/shuttle/abandoned/bridge{
 	name = "Security Pod"
 	})
+"R" = (
+/obj/structure/cable,
+/turf/open/floor/mineral/titanium/white,
+/area/shuttle/abandoned/bridge{
+	name = "Security Pod"
+	})
 "S" = (
 /obj/machinery/computer/shuttle/white_ship/bridge{
 	shuttleId = "science";
@@ -211,7 +219,7 @@ y
 (5,1,1) = {"
 d
 n
-x
+R
 s
 t
 K
