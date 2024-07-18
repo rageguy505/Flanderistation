@@ -699,9 +699,7 @@
 /area/virtual_domain/fullbright)
 "iy" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/structure/window/reinforced/spawner/directional/north{
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/chair/stool/directional/south,
 /obj/item/clothing/glasses/sunglasses{
 	pixel_y = -2;
@@ -1401,7 +1399,6 @@
 "si" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/condiment/enzyme{
-	layer = 5;
 	pixel_x = 9;
 	pixel_y = 5
 	},
@@ -3469,12 +3466,7 @@
 /area/virtual_domain/fullbright)
 "Rk" = (
 /obj/structure/table/glass,
-/obj/machinery/fax{
-	fax_name = "Beach Hotel Fax";
-	name = "Beach Hotel's Fax Machine";
-	pixel_y = 8;
-	visible_to_network = 0
-	},
+/obj/item/storage/box/donkpockets,
 /turf/open/floor/iron/dark/diagonal,
 /area/virtual_domain)
 "Rs" = (
